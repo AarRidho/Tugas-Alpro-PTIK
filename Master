@@ -23,7 +23,7 @@ void isidata(int n, char *nm_id[], int ni_id[]);
 void tampildata(char *nm_td[], int ni_td[],int n);
 
 int main(){
-	char pilih=0;
+	char pilih='0';
 	char response=0;
 	do{
 		pilih=pilihMenuUtama();
@@ -202,7 +202,7 @@ char pilihMenuPerhitungan(){// fungsi menampilkan menu dan mengembalikan pilihan
 	printf("1. Menu 1 - FISIKA\n");
 	printf("2. Menu 2 - MATEMATIKA\n");
 	printf("3. Menu 3 - STATISTIKA\n");
-	printf("0. Exit \n");
+	printf("0. Home \n");
 	printf("Pilihan Anda : ");scanf(" %c",&tpilih);
 	return tpilih;
 }
@@ -217,7 +217,7 @@ char pilihMenuFisika(){
 	printf("1. Menu 1 - Energi Potensial\n");
 	printf("2. Menu 2 - Tekanan Hidrostatis\n");
 	printf("3. Menu 3 - Gerak Lurus Beraturan\n");
-	printf("0. Exit \n");
+	printf("0. Home \n");
 	printf("Pilihan Anda : ");scanf(" %c",&tpilih);
 	return tpilih;
 }
@@ -243,7 +243,7 @@ char pilihPerhitunganMtk(){
 	printf("Pilihan menu \n");
 	printf("1. Menu 1 - Kubus\n");
 	printf("2. Menu 2 - Balok\n");
-	printf("0. Exit \n");
+	printf("0. Home \n");
 	printf("Pilihan Anda : ");scanf(" %c",&tpilih);
 	return tpilih;
 }
