@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#include <conio.h>
 
 	//Deklarasi Menu
 void biodata();
@@ -58,7 +59,7 @@ int main(){
 					     		printf("Energi Potensial \t: %d Joule\n",energipotensial(masa,g,tinggi));
 					     		garis('=',70);
 					     		printf("Ulangi perhitungan? (Y/N): ");
-								response2 = getch();
+								response2 = getche();
 								system("cls");
 							}while((response2=='Y')||(response2=='y'));
 						}else if(pilih=='2'){
@@ -73,7 +74,7 @@ int main(){
 								printf("Tekanan Hidrostatis\t\t: %d Joule\n",tekananhidrostatis(masa,tinggi));
 								garis('=',70);
 								printf("Ulangi perhitungan? (Y/N): ");
-								response2 = getch();
+								response2 = getche();
 								system("cls");
 							}while((response2=='Y')||(response2=='y'));
 						}else if(pilih=='3'){
@@ -89,7 +90,7 @@ int main(){
 								printf("Jarak Yang Ditempuh : %d Joule\n",geraklurusberaturan(kec,a,t));
 								garis('=',70);
 								printf("Ulangi perhitungan? (Y/N): ");
-								response2 = getch();
+								response2 = getche();
 								system("cls");
 							}while((response2=='Y')||(response2=='y'));
 						}else if(pilih!='0'){
@@ -116,7 +117,7 @@ int main(){
 								kubus(rusuk);
 								garis('=',70);
 								printf("Ulangi perhitungan? (Y/N): ");
-								response2 = getch();
+								response2 = getche();
 								system("cls");
 							}while((response2=='Y')||(response2=='y'));
 						}else if(pilih=='2'){
@@ -132,7 +133,7 @@ int main(){
 								balok(panjang, lebar, tinggi);
 								garis('=',70);
 								printf("Ulangi perhitungan? (Y/N): ");
-								response2 = getch();
+								response2 = getche();
 								system("cls");
 							}while((response2=='Y')||(response2=='y'));
 						}else if(pilih!='0'){//mengatasi jika salah pilih
@@ -179,7 +180,7 @@ char pilihMenuUtama(){
 	return tpilih;
 }
 
-char biodata(){
+void biodata(){
 	system("cls");
 	garis('=',70);
 	printf("\t\tAnda memasuki laman biodata\n");
@@ -280,7 +281,7 @@ char statistika(){
 		}
 		garis('=',32);
 		printf("Masukan data baru?(Y/N): ");
-		c = getch();
+		c = getche();
 		system("cls");
 	}while((c=='Y')||(c=='y'));
 	return c;
